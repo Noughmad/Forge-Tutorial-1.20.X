@@ -12,7 +12,7 @@ def get_block_name(filename):
 
 def add_block(infile, name, dir, project_name):
     json_files = []
-    lname = name.tolower()
+    lname = name.lower()
 
     base = f"{dir}/src/main/resources/assets/{project_name}"
 
@@ -49,7 +49,7 @@ def add_block(infile, name, dir, project_name):
         with open(filename, 'wt') as f:
             json.dump(data, f, indent=4)
     
-    texture_name = f"{base}/textures/block/jani_{name}_block.png"
+    texture_name = f"{base}/textures/block/jani_{lname}_block.png"
     shutil.copyfile(infile, texture_name)
 
     en = {}
