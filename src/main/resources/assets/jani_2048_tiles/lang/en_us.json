@@ -1,0 +1,18 @@
+{
+  "item.jani_2048_tiles.jani_2": "Jani 2",
+  "block.jani_2048_tiles.jani_2_block": "Jani 2",
+  "block.jani_2048_tiles.jani_4_block": "Jani 4",
+  "block.jani_2048_tiles.jani_8_block": "Jani 8",
+  "block.jani_2048_tiles.jani_16_block": "Jani 16",
+  "block.jani_2048_tiles.jani_32_block": "Jani 32",
+  "block.jani_2048_tiles.jani_64_block": "Jani 64",
+  "block.jani_2048_tiles.jani_128_block": "Jani 128",
+  "block.jani_2048_tiles.jani_256_block": "Jani 256",
+  "block.jani_2048_tiles.jani_512_block": "Jani 512",
+  "block.jani_2048_tiles.jani_1024_block": "Jani 1024",
+  "block.jani_2048_tiles.jani_2048_block": "Jani 2048",
+  "block.jani_2048_tiles.jani_4096_block": "Jani 4096",
+  "block.jani_2048_tiles.jani_8k_block": "Jani 8k",
+  "block.jani_2048_tiles.jani_16k_block": "Jani 16k",
+  "creativetab.jani_tab": "Jani 2048 Tiles"
+}

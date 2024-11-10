@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "jani_2048_tiles:item/jani_2"
+  }
+}

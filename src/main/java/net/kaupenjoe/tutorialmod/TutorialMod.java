@@ -20,7 +20,7 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TutorialMod.MOD_ID)
 public class TutorialMod {
-    public static final String MOD_ID = "tutorialmod";
+    public static final String MOD_ID = "jani_2048_tiles";
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public TutorialMod() {
@@ -42,10 +42,7 @@ public class TutorialMod {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.SAPPHIRE);
-            event.accept(ModItems.RAW_SAPPHIRE);
-        }
+        
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
