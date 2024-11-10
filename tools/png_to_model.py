@@ -12,35 +12,36 @@ def get_block_name(filename):
 
 def add_block(infile, name, dir, project_name):
     json_files = []
+    lname = name.tolower()
 
     base = f"{dir}/src/main/resources/assets/{project_name}"
 
     # blockstate
     json_files.append((
-        f"{base}/blockstates/jani_{name}_block.json",
+        f"{base}/blockstates/jani_{lname}_block.json",
         {
             "variants": {
                 "": {
-                    "model": f"{project_name}:block/jani_{name}_block"
+                    "model": f"{project_name}:block/jani_{lname}_block"
                 }
             }
         }
     ))
     # block model
     json_files.append((
-        f"{base}/models/block/jani_{name}_block.json",
+        f"{base}/models/block/jani_{lname}_block.json",
         {
             "parent": "minecraft:block/cube_all",
             "textures": {
-                "all": f"{project_name}:block/jani_{name}_block"
+                "all": f"{project_name}:block/jani_{lname}_block"
             }   
         }
     ))
     # item model
     json_files.append((
-        f"{base}/models/item/jani_{name}_block.json",
+        f"{base}/models/item/jani_{lname}_block.json",
         {
-            "parent": f"{project_name}:block/jani_{name}_block"
+            "parent": f"{project_name}:block/jani_{lname}_block"
         }
     ))
 
@@ -54,7 +55,7 @@ def add_block(infile, name, dir, project_name):
     en = {}
     with open(f"{base}/lang/en_us.json", "r") as f:
         en = json.load(f)
-    en[f"block.{project_name}.jani_{name}_block"] = f"Jani {name}"    
+    en[f"block.{project_name}.jani_{lname}_block"] = f"Jani {name}"    
     with open(f"{base}/lang/en_us.json", "w") as f:
         json.dump(en, f, indent=4)
 
@@ -62,7 +63,7 @@ def add_block(infile, name, dir, project_name):
 
     java_files.append((
         f"{dir}/src/main/java/net/kaupenjoe/tutorialmod/block/ModBlocks.java",
-        f"""public static final RegistryObject<Block> JANI_{name}_BLOCK = registerBlock("jani_{name}_block",
+        f"""public static final RegistryObject<Block> JANI_{name}_BLOCK = registerBlock("jani_{lname}_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
     """
     ))

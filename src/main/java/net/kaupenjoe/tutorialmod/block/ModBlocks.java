@@ -81,49 +81,49 @@ public class ModBlocks {
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> JANI_2b_BLOCK = registerBlock("jani_2b_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_4B_BLOCK = registerBlock("jani_4B_block",
+    public static final RegistryObject<Block> JANI_4B_BLOCK = registerBlock("jani_4b_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_8B_BLOCK = registerBlock("jani_8B_block",
+    public static final RegistryObject<Block> JANI_8B_BLOCK = registerBlock("jani_8b_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_16B_BLOCK = registerBlock("jani_16B_block",
+    public static final RegistryObject<Block> JANI_16B_BLOCK = registerBlock("jani_16b_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_32B_BLOCK = registerBlock("jani_32B_block",
+    public static final RegistryObject<Block> JANI_32B_BLOCK = registerBlock("jani_32b_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_64B_BLOCK = registerBlock("jani_64B_block",
+    public static final RegistryObject<Block> JANI_64B_BLOCK = registerBlock("jani_64b_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_128B_BLOCK = registerBlock("jani_128B_block",
+    public static final RegistryObject<Block> JANI_128B_BLOCK = registerBlock("jani_128b_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_256B_BLOCK = registerBlock("jani_256B_block",
+    public static final RegistryObject<Block> JANI_256B_BLOCK = registerBlock("jani_256b_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_512B_BLOCK = registerBlock("jani_512B_block",
+    public static final RegistryObject<Block> JANI_512B_BLOCK = registerBlock("jani_512b_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_1T_BLOCK = registerBlock("jani_1T_block",
+    public static final RegistryObject<Block> JANI_1T_BLOCK = registerBlock("jani_1t_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_2T_BLOCK = registerBlock("jani_2T_block",
+    public static final RegistryObject<Block> JANI_2T_BLOCK = registerBlock("jani_2t_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_4T_BLOCK = registerBlock("jani_4T_block",
+    public static final RegistryObject<Block> JANI_4T_BLOCK = registerBlock("jani_4t_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_8T_BLOCK = registerBlock("jani_8T_block",
+    public static final RegistryObject<Block> JANI_8T_BLOCK = registerBlock("jani_8t_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_16T_BLOCK = registerBlock("jani_16T_block",
+    public static final RegistryObject<Block> JANI_16T_BLOCK = registerBlock("jani_16t_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_32T_BLOCK = registerBlock("jani_32T_block",
+    public static final RegistryObject<Block> JANI_32T_BLOCK = registerBlock("jani_32t_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_64T_BLOCK = registerBlock("jani_64T_block",
+    public static final RegistryObject<Block> JANI_64T_BLOCK = registerBlock("jani_64t_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_128T_BLOCK = registerBlock("jani_128T_block",
+    public static final RegistryObject<Block> JANI_128T_BLOCK = registerBlock("jani_128t_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_256T_BLOCK = registerBlock("jani_256T_block",
+    public static final RegistryObject<Block> JANI_256T_BLOCK = registerBlock("jani_256t_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_512T_BLOCK = registerBlock("jani_512T_block",
+    public static final RegistryObject<Block> JANI_512T_BLOCK = registerBlock("jani_512t_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_1QD_BLOCK = registerBlock("jani_1QD_block",
+    public static final RegistryObject<Block> JANI_1QD_BLOCK = registerBlock("jani_1qd_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_2QD_BLOCK = registerBlock("jani_2QD_block",
+    public static final RegistryObject<Block> JANI_2QD_BLOCK = registerBlock("jani_2qd_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_4QD_BLOCK = registerBlock("jani_4QD_block",
+    public static final RegistryObject<Block> JANI_4QD_BLOCK = registerBlock("jani_4qd_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-    public static final RegistryObject<Block> JANI_8QD_BLOCK = registerBlock("jani_8QD_block",
+    public static final RegistryObject<Block> JANI_8QD_BLOCK = registerBlock("jani_8qd_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
     // ADD BLOCKS HERE
 
