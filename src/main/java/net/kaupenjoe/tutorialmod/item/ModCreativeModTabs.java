@@ -403,7 +403,3 @@ public class ModCreativeModTabs {
         CREATIVE_MODE_TABS.register(eventBus);
     }
 }
-ventBus eventBus) {
-        CREATIVE_MODE_TABS.register(eventBus);
-    }
-}
