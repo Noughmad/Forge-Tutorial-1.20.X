@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "jani_2048_tiles:block/jani_10_nonillion_block"
+    }
+}

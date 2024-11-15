@@ -1,7 +1,7 @@
 {
-  "variants": {
-    "": {
-      "model": "jani_2048_tiles:block/jani_64_block"
+    "variants": {
+        "": {
+            "model": "jani_2048_tiles:block/jani_64_block"
+        }
     }
-  }
 }

@@ -1,6 +1,0 @@
-{
-    "parent": "minecraft:block/cube_all",
-    "textures": {
-        "all": "jani_2048_tiles:block/jani_8B_block"
-    }
-}

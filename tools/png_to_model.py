@@ -10,11 +10,12 @@ def get_block_name(filename):
     name, _ = os.path.splitext(base)
     return name
 
-def add_block(infile, name, dir, project_name):
+def add_block(infile, name, project_dir, project_name):
     json_files = []
-    lname = name.lower()
+    lname = name.lower().replace(' ', '_')
+    uname = name.upper().replace(' ', '_')
 
-    base = f"{dir}/src/main/resources/assets/{project_name}"
+    base = f"{project_dir}/src/main/resources/assets/{project_name}"
 
     # blockstate
     json_files.append((
@@ -62,14 +63,14 @@ def add_block(infile, name, dir, project_name):
     java_files = []
 
     java_files.append((
-        f"{dir}/src/main/java/net/kaupenjoe/tutorialmod/block/ModBlocks.java",
-        f"""public static final RegistryObject<Block> JANI_{name}_BLOCK = registerBlock("jani_{lname}_block",
+        f"{project_dir}/src/main/java/net/kaupenjoe/tutorialmod/block/ModBlocks.java",
+        f"""public static final RegistryObject<Block> JANI_{uname}_BLOCK = registerBlock("jani_{lname}_block",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
     """
     ))
     java_files.append((
-        f"{dir}/src/main/java/net/kaupenjoe/tutorialmod/item/ModCreativeModTabs.java",
-        f"""pOutput.accept(ModBlocks.JANI_{name}_BLOCK.get());
+        f"{project_dir}/src/main/java/net/kaupenjoe/tutorialmod/item/ModCreativeModTabs.java",
+        f"""pOutput.accept(ModBlocks.JANI_{uname}_BLOCK.get());
                         """
     ))
 
@@ -83,18 +84,25 @@ def add_block(infile, name, dir, project_name):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("infile", type=str)
-    parser.add_argument("-n", "--name", type=str, help="Block name, derived from file name if not provided")
-    parser.add_argument("-d", "--dir", type=str, help="Project directory, defaults to the current directory")
+    # parser.add_argument("infile", type=str)
+    parser.add_argument("indir", type=str)
+    # parser.add_argument("-n", "--name", type=str, help="Block name, derived from file name if not provided")
+    parser.add_argument("-d", "--project-dir", type=str, help="Project directory, defaults to the current directory")
     parser.add_argument("-p", "--project-name", type=str, help="Project name", default="jani_2048_tiles")
 
     args = parser.parse_args()
 
-    block_name = args.name or get_block_name(args.infile)
+    # block_name = args.name or get_block_name(args.infile)
     project_name = args.project_name
-    dir = args.dir or os.getcwd()
+    project_dir = args.project_dir or os.getcwd()
 
-    add_block(args.infile, block_name, dir, project_name)
+    fnames = [os.path.join(args.indir, f) for f in os.listdir(args.indir)]
+    fnames.sort(key=os.path.getmtime)
+
+    for name in fnames:
+        block_name = get_block_name(name)
+        print("Adding block", name, block_name)
+        add_block(name, block_name, project_dir, project_name)
 
 if __name__ == "__main__":
     main()
